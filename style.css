@@ -1,0 +1,202 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(22, 22, 37);
+    color: #fff;
+    line-height: 1.6;
+}
+header {
+    position: relative;
+    background-color: rgb(22, 22, 37);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: rgb(108, 108, 253);
+}
+.vertical-links {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(22, 22, 37);
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    z-index: 100;
+    margin-left: 15%;
+}
+
+.icon-link {
+    color: rgb(108, 108, 253);
+    font-size: 1.5em; /* Adjust size as needed */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.intro{
+    color: white;
+    position: fixed;
+    top: 25%;
+    left:30%
+}
+.i{
+    font-size: 53px;
+}
+.j{
+    font-size: 25px;
+    color: rgb(228, 221, 221);
+}
+.k{
+    font-size: 22px;
+    color: rgb(228, 221, 221);;
+}
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%); /* Move back by 50% of its size */
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about{
+    color: white;
+    font-weight: 250px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.para{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.project{
+    color: white;
+    font-weight: 250px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.project h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.project-list {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    position: relative;
+    right: 30%;
+}
+
+.project-item {
+    background-color: rgb(44, 44, 69); /* Slightly lighter background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.project-item .btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(58, 134, 255); /* Accent color for buttons */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item .btn:hover {
+    background-color: rgb(30, 90, 200); /* Darker shade on hover */
+}
+.contact-intro {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-details {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact-details a {
+    color: rgb(58, 134, 255);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
